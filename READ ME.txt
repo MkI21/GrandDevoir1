@@ -1,0 +1,24 @@
+Instructions: executer le code et rentrer le nombre de commande prevues et le temps d'ouverture du restaurant puis pour chaque commande le temps a laquelle la commande a ete prise et sa duree.
+
+
+Explications:
+il y a une structure pour la commande en elle meme (qui s'appelle Commande) , qui a 2 champs : le temps(t) et la duree(d)
+
+dans main on demande le nombres de commandes et le temps d'ouverture du restaurant puis dans un vecteur de type "Commande" (la structure ci dessus) qui s'appelle commandes on rentres les donnees de chaque commandes 
+
+on cree 2 variables : tempsReel et dureeMax et la queue(file d'attente) pour stocker les commandes en attente de traitement
+
+on ajoute les commandes dans la queue et dureeMAx prend la valeur de la duree de la commande en cours
+
+tant que la queue est rempli (!empty) la variable commandeEnCours prend la valeur de la premiere commande se situant dans la queue
+la variable tempsTheorique prend la valeur de la somme du temps et de la duree de la commande en cours
+la variable tempsReel prend la valeur de la somme entre ( le maximum entre tempsReel et le temps de la commande en cours (car tempsReel est initialiser avec 0) ) et la duree de la commande en cours
+
+on affiche ensuite pour chaque commande les 2 temps (d'attente theorique et reel)
+
+et temps reel prend la valeur du temps reel de completion de la commande puis on sort cette commande de la queue avec .pop
+
+on verifie si le restaurant est vide 
+on affiche la duree maximale des commandes recues
+
+a la fin on verifie si toutes les commandes on ete traitees avant la fermeture du restaurant
