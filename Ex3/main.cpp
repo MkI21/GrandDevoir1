@@ -45,7 +45,7 @@ int main()
     f.close();
     ville = findRoadIntersection(route1.pfirst , route2.pfirst);
     if(ville!="Impossible")
-        cout<<"le nom de la ville ou les 2 routes s'intersectent est : "<<ville;
+        cout<<"le nom de la ville ou les 2 routes s'intersectent est : "<<ville<<endl;
     else
         cout<<"pas toutes les routes menent a Rome ";
 }
